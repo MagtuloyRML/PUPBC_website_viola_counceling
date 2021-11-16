@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+    background: #F8F5F1;
+}
+.wrapper{
+    display: flex;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+    background: #8E0505;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: #8E0505;
+}
+.class_group{
+    color: #F8F5F1;
+    padding: 10%;
+}
+
+.class_group .greeting{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+/*class button config*/
+.class_group .class_button .button{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    color: #8E0505;
+    margin: 10px;
+    background-color: #F8F5F1;
+    cursor: pointer;
+}
+
+.class_group .class_button .button:hover{
+    color: #ffc3c3;
+    background-color: #635b52;
+}
+/*login student and admin*/
+.login{
+    display: none;
+    z-index: 10;
+    width: 75%;
+}
+
+/*back bttn login and reg*/
+.login .bttn, .reg .bttn, .reg .closebtn_reg_admin{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: transparent;
+    border: none;
+    width: 45px;
+    height: 45px;
+}
+.login .bttn i, .reg .bttn i, .reg .closebtn_reg_admin i{
+    color: #F8F5F1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .bttn i:hover, .reg .bttn i:hover, .reg .closebtn_reg_admin i:hover{
+    color: #979694;
+}
+
+.login .input-container{
+    display: flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+.login .input-container input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+
+}
+.login .input-container i{
+    padding: 10px;
+    background: #F8F5F1;
+    color: #666666;
+    min-width: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.login .action_button {
+    padding: 10px;
+    width: 100%;
+    left: 0%;
+}
+
+.login .action_button .btn{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    color: #8E0505;
+    background-color: #F8F5F1;
+    cursor: pointer;
+}
+
+.login .action_button .btn:hover{
+    color: #ffc3c3;
+    background-color: #635b52;
+}
+
+/*layout for registration*/
+
+.reg{
+    display: none;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    background: #8E0505;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: #8E0505;
+
+}
+
+.reg form{
+    background: #F8F5F1;
+    width: 60%;
+}
+
+.reg form p{
+    padding: 15px;
+}
+
+.reg .reg_content{
+    height: auto;
+    padding: 30px, 30px, 30px, 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.reg .reg_content .input-container{
+    width: 350px;
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 15px;
+}
+.reg .reg_content .input-container input{
+    width: 90%;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+}
+.reg .reg_content .input-container .gender{
+    height: 15px;
+    padding: 0px;
+}
+
+.reg .reg_content .input-container p, .reg .reg_content .input-container label{
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg .reg_content .input-container i{
+    background: #F8F5F1;
+    color: #666666;
+    min-width: 50px;
+    justify-content: center;
+    text-align: center;
+}
+.reg form .sign_up{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg form .sign_up .btn{
+    right: 15%;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 70%;
+    height: 30px;
+    background-color: #8E0505;
+    color: #F8F5F1;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.reg form .sign_up .btn:hover{
+    color: #ffc3c3;
+    background-color: #635b52;
+}
+
+
